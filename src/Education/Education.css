@@ -1,0 +1,43 @@
+#education {
+	background-color: #fff;
+}
+.edu-list {
+	display: flex;
+	justify-content: space-around;
+}
+.institute {
+	flex: 1;
+	padding: 0% 5%;
+	text-align: center;
+}
+.institute-image {
+	width: 15vw;
+	height: 15vw;
+}
+.institute h2 {
+	font-size: 1.5vw;
+}
+.institute h3 {
+	font-size: 1.2vw;
+}
+.institute h4 {
+	font-size: 1.1vw;
+}
+.institute p {
+	font-size: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+	.institute h2 {
+		font-size: 3vw;
+	}
+	.institute h3 {
+		font-size: 2.5vw;
+	}
+	.institute h4 {
+		font-size: 2.2vw;
+	}
+	.institute p {
+		font-size: 2vw;
+	}
+}

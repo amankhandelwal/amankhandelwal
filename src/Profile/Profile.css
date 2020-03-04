@@ -1,0 +1,144 @@
+#profile {
+	display: block;
+	height: 70vh;
+	margin-top: 4vw;
+	overflow: hidden;
+	position: relative;
+}
+.profile-picture {
+	/*background-color: #123;*/
+	transform: skew(-30deg) translateX(-10vw);
+	display: inline-block;
+	width: 50vw;
+	overflow: hidden;
+}
+.profile-image {
+	height: 70vh;
+	transform: skew(30deg) translateX(10vw);
+	object-fit: contain;
+}
+.profile-content {
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+}
+.about {
+	width: 40vw;
+	margin-bottom: 5vh;
+}
+.about-text {
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	color: #777;
+}
+.text {
+	/*background-image: linear-gradient(to right, #112233, #1b2b3d, #253547, #303f52, #3a495d);*/
+	/*background-image: linear-gradient(to left, #008196, #0070a3, #3a3c95);*/
+	background-image: linear-gradient(to right, #6c648b, #5c7ba3, #4ca8b0);
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 0.95em;
+	max-width: 30vw;
+	padding: 1%;
+	padding-left: 3%;
+	color: #fff;
+	transform: translateX(1200px);
+	animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 875px) {
+	.profile-picture {
+		transform: skew(-30deg) translateX(-15vw);
+	}
+
+	.profile-image {
+		transform: skew(30deg) translateX(-5vw);
+	}
+}
+@media screen and (max-width: 874px) and (min-width: 600px) {
+	#profile {
+		height: 60vh;
+	}
+	.profile-image {
+		height: 50vh;
+		transform: translateX(-5vw);
+	}
+	.profile-picture {
+		transform: none;
+		height: 45vh;
+		width: 45vh;
+		border-radius: 50vh;
+		margin-right: 3vw;
+	}
+	.profile-content {
+		top: 0%;
+	}
+	.text {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1.text {
+		font-size: 1em;
+		max-width: 100vw;
+	}
+	#profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		height: 100vh;
+	}
+	.profile-picture {
+		display: block;
+		width: 100%;
+		transform: none;
+	}
+	.profile-image {
+		transform: none;
+		width: 100%;
+		object-fit: cover;
+	}
+	.profile-content {
+		position: static;
+		text-align: center;
+	}
+	.text {
+		text-align: center;
+	}
+	.about-text {
+		text-align: center;
+	}
+	.about {
+		width: 100%;
+	}
+}
+.text1 {
+	animation: design 200ms linear 200ms forwards;
+}
+.text2 {
+	animation: design 200ms linear 400ms forwards;
+}
+.text3 {
+	animation: design 200ms linear 600ms forwards;
+}
+.text4 {
+	animation: design 200ms linear 800ms forwards;
+}
+.text5 {
+	animation: design 200ms linear 1000ms forwards;
+}
+
+@keyframes design {
+	from {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+	to {
+		opacity: 100;
+		transform: translateX(0px);
+	}
+}

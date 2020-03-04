@@ -1,0 +1,11 @@
+#skills {
+	display: flex;
+	flex-direction: column;
+	/*background-image: linear-gradient(to bottom, #112233, #1b2b3d, #253547, #303f52, #3a495d);*/
+}
+.skillset {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}

@@ -1,0 +1,27 @@
+.card-list-item {
+	line-height: 1.1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/*opacity: 0;
+	animation: carditem 500ms linear 500ms forwards;*/
+}
+.card-item-image {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+.card-item-title {
+	font-size: 0.8em;
+	color: #555;
+}
+/*
+@keyframes carditem {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}
+*/

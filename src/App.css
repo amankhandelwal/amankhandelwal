@@ -1,0 +1,51 @@
+.App {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.section-title {
+  font-size: 2em;
+  text-align: center;
+}
+.themecolor {
+  color: #123;
+}
+.whitecolor {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 1.6em;
+  }
+}
+footer {
+  background: #fff;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 2px 0px;
+}
+.themegrad {
+  /*background-image: linear-gradient(to left, #309089, #008196, #0070a3, #005aa5, #3a3c95);*/
+  /*background-color: #6bbaa7;*/
+  background-image: linear-gradient(to right, #6c648b, #5c7ba3, #4a92b0, #4ca8b0, #6bbaa7);
+}
+.themesolid {
+  background-color: #6c648b; /*003554*/
+}
+/* 
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */

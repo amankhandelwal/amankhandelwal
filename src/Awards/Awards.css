@@ -1,0 +1,79 @@
+#awards {
+	/*background-image: linear-gradient(to top, #112233, #1b2b3d, #253547, #303f52, #3a495d);*/
+	padding: 3% 0%;
+}
+
+.award-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.award-list .fa {
+	color: #fff;
+	font-size: 2em;
+}
+.award-item {
+	flex: 1;
+	min-width: 25%;
+	color: #fff;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-family: 'Lato', 'serif';
+}
+.trophy {
+	flex: 2;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.where {
+	flex: 4;
+	display: flex;
+	padding-left: 3%;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.award-title {
+	margin: 0;
+	font-size: 1em;
+}
+.award-position {
+	margin: 0;
+	font-size: 1em;
+	font-weight: lighter;
+}
+.award-time {
+	margin: 0;
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+	.award-list {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.award-item {
+		padding: 2% 0%;
+		min-width: 80%;
+	}
+	.trophy {
+	}
+	.award-position {
+		font-size: 0.8em;
+	}
+	.award-title {
+		font-size: 0.8em;
+	}
+	.award-time {
+		font-size: 0.8em;
+	}
+}

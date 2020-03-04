@@ -1,0 +1,53 @@
+#experience {
+	/*background-image: linear-gradient(to bottom, #112233, #1b2b3d, #253547, #303f52, #3a495d);*/
+}
+.exp-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.exp-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.exp-list .card {
+	max-width: 27vw;
+	min-height: 55vh;
+}
+.exp-logo {
+	width: 40%;
+	height: 20%;
+	margin-bottom: 5%;
+}
+.course-list {
+	list-style-type: circle;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+	.exp-list .card {
+		min-height: 65vh;
+	}
+}
+@media screen and (max-width: 600px) {
+	.exp-list .card {
+		min-width: 85vw;
+		margin-bottom: 5vw;
+	}
+}
+
+.duration {
+	font-size: 0.9em;
+	color: #555;
+}
+.exp-desc {
+	text-align: center;
+	font-size: 0.9em;
+	font-family: 'Lato', 'sans-serif';
+}
+.exp-list-item {
+	font-size: 0.9em;
+	font-family: 'Lato', 'sans-serif';
+}
