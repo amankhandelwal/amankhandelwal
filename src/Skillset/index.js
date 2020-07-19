@@ -14,6 +14,8 @@ import jq from "./icon/jquery.png";
 import node from "./icon/node.jpg";
 import flask from "./icon/flask.png";
 import php from "./icon/php.png";
+import kubernetes from "./icon/kubernetes.png";
+import dropwizard from "./icon/dropwizard.png";
 
 //mobiledev
 import android from "./icon/android.jpg";
@@ -29,12 +31,15 @@ import mysql from "./icon/mysql.png";
 import nosql from "./icon/nosql.png";
 import firebase from "./icon/firebase.jpg";
 import mongodb from "./icon/mongodb.jpg";
+import redis from "./icon/redis.png";
+import documentdb from "./icon/documentdb.png";
 
 //languages
 import java from "./icon/java.png";
 import python from "./icon/python.png";
 import c from "./icon/c.png";
 import cpp from "./icon/cpp.png";
+import kotlin from "./icon/kotlin.png";
 
 //Projects
 import autogram from "./icon/autogram.jpg";
@@ -55,18 +60,20 @@ import college from "./icon/college.png";
 //Internships
 import autogramlogo from "./icon/autogram logo.png";
 import hulladeklogo from "./icon/hulladek logo.png";
+import udaanlogo from "./icon/udaan.png"
 
 const skillset = {
 	frontend: [
 		{ title: "HTML", src: html },
 		{ title: "CSS/SCSS", src: css },
-		{ title: "Javascript", src: js },
 		{ title: "React JS", src: rct },
 		{ title: "Redux", src: rdx },
 		{ title: "Electron JS", src: electron },
 		{ title: "Bootstrap & Jquery", src: bootstrap }
 	],
 	backend: [
+		{ title: "Dropwizard", src: dropwizard },
+		{ title: "Kubernetes", src: kubernetes },
 		{ title: "NodeJS", src: node },
 		{ title: "Express", src: node },
 		{ title: "Python- Flask", src: flask },
@@ -84,7 +91,9 @@ const skillset = {
 		{ title: "MongoDB", src: mongodb },
 		{ title: "NoSQL", src: nosql },
 		{ title: "MySQL", src: mysql },
-		{ title: "Firebase", src: firebase }
+		{ title: "Firebase", src: firebase },
+		{ title: "DocumentDB", src: documentdb },
+		{ title: "Redis", src: redis }
 	],
 	mobiledev: [
 		{ title: "React-Native", src: rct },
@@ -93,6 +102,8 @@ const skillset = {
 		{ title: "Java and XML", src: java }
 	],
 	languages: [
+		{ title: "Kotlin", src: kotlin },
+		{ title: "Javascript", src: js },
 		{ title: "Python", src: python },
 		{ title: "Java", src: java },
 		{ title: "C", src: c },
@@ -376,17 +387,39 @@ const projectset = [
 
 const internships = [
 	{
-		title: "Hulladek Recycling",
-		designation: "Web Developer Intern",
-		duration: "July 2016 - August 2016",
+		title: "Udaan.com",
+		designation: "Product Engineer",
+		duration: "June 2019 - Present",
 		description: (
 			<p className="exp-desc">
-				Developed a responsive website for Hulladek.
+				Product Owner of Seller Experience
 				<br />
-				(Details in <a href="#projects">Project</a> Section)
+				<br />
+				Product Owner of Communications
+				<ul className={"exp-details"}>
+					<li>Designed a centralized Communication Framework</li>
+					<li>Designed the Notification Service</li>
+					<li>Management of Multi-Tenant Apps with Multiple Providers</li>
+					<li>Orchestration of Rule Engine</li>
+				</ul>
 			</p>
 		),
-		image: hulladeklogo
+		image: udaanlogo
+	},
+	{
+		title: "Udaan.com",
+		designation: "Product Engineer Intern",
+		duration: "December 2018 - April 2019",
+		description: (
+			<p className="exp-desc">
+				Systemized, Instrumented and Automated Seller's lifecycle stages
+				<ul className={"exp-details"}>
+					<li>Automating Seller's Onboarding Process</li>
+					<li>Seller Incubation Workflow</li>
+				</ul>
+			</p>
+		),
+		image: udaanlogo
 	},
 	{
 		title: "Autogram Technosoft Pvt. Ltd.",
@@ -400,6 +433,19 @@ const internships = [
 			</p>
 		),
 		image: autogramlogo
+	},
+	{
+		title: "Hulladek Recycling",
+		designation: "Web Developer Intern",
+		duration: "July 2016 - August 2016",
+		description: (
+			<p className="exp-desc">
+				Developed a responsive website for Hulladek.
+				<br />
+				(Details in <a href="#projects">Project</a> Section)
+			</p>
+		),
+		image: hulladeklogo
 	}
 ];
 

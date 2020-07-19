@@ -27,8 +27,10 @@ const About = () => {
 		<div className="about">
 			<h1>Hi there!</h1>
 			<h2 className="about-text">
-				I am Aman Khandelwal. I have always had a knack for creating art from
-				waste. When I found that I could create anything with code, I had to
+				I am Aman Khandelwal. I'm working as a Product Engineer at Udaan.com - India's fastest B2B Unicorn.
+				<br />
+				I have always had a knack for creating things.
+				When I found that I could create anything with code, I had to
 				learn that. In a nutshell, I love making stuff. That's my drug.
 			</h2>
 		</div>
@@ -39,10 +41,10 @@ const DevProfile = () => {
 	if (window.innerWidth > 510)
 		return (
 			<div className="dev">
-				<h1 className="themegrad text text1">Javascript Developer</h1>
-				<h1 className="themegrad text text2">React-Native Developer</h1>
-				<h1 className="themegrad text text3">FullStack Developer</h1>
-				<h1 className="themegrad text text4">Android Developer</h1>
+				<h1 className="themegrad text text1">Product Engineer</h1>
+				<h1 className="themegrad text text2">Software Developer</h1>
+				<h1 className="themegrad text text3">Javascript Developer</h1>
+				<h1 className="themegrad text text4">MERN Stack Developer</h1>
 				<h1 className="themegrad text text5">Deep Learning Enthusiast</h1>
 			</div>
 		);

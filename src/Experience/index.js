@@ -8,7 +8,7 @@ export default class Experience extends React.Component {
 	render() {
 		return (
 			<section id="experience" className="themegrad">
-				<h1 className="section-title whitecolor">Training and Internship</h1>
+				<h1 className="section-title whitecolor">Work Experience</h1>
 				<div className="exp-list">
 					{internships.map((item, index) => Card(<InternshipItem {...item} key={index} />))}
 					{Card(<TrainingItem />)}
