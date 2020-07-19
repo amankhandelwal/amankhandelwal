@@ -25,9 +25,9 @@ const NavMenu = props => {
 				<NavItem href="#awards">Awards</NavItem>
 				<NavItem href="#education">Education</NavItem>
 				<NavItem href="#contact">Contact</NavItem>
-				<NavItem target="_blank" href={resume}>
+				{/*<NavItem target="_blank" href={resume}>
 					<i className="fas fa-file-download" />&nbsp; Resume
-				</NavItem>
+				</NavItem>*/}
 			</div>
 		);
 	else
